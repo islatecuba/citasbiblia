@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas Bíblicas Para Ti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Citas Bíblicas Para Ti</h1>
+            <nav>
+                <ul>
+                    <li><a href="#random-verse">Versículo Aleatorio</a></li>
+                    <li><a href="#situations">Citas para Situaciones Personales</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="random-verse" class="card">
+                <h2>Versículo Aleatorio</h2>
+                <p id="verse-text">Haz clic en el botón para ver un versículo aleatorio.</p>
+                <button class="btn" onclick="generateRandomVerse()">Ver un versículo</button>
+            </section>
+
+            <section id="situations" class="card">
+                <h2>Citas Bíblicas para Situaciones Personales</h2>
+                <label for="situation-select">Elige una situación:</label>
+                <select id="situation-select" class="select">
+                    <option value="fortaleza">Fortaleza</option>
+                    <option value="esperanza">Esperanza</option>
+                    <option value="amor">Amor</option>
+                    <option value="sabiduria">Sabiduría</option>
+                    <option value="enfermedad">Enfermedad</option>
+                    <option value="aliento">Aliento</option>
+                    <option value="desanimo">Desánimo</option>
+                    <option value="familia">Familia</option>
+                    <option value="miedo">Miedo</option>
+                </select>
+                <button class="btn" onclick="showVerseForSituation()">Ver Cita</button>
+                <p id="situation-verse"></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Creaciones Cristianas Maikel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
